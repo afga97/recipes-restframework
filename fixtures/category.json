@@ -1,0 +1,30 @@
+[
+{
+  "model": "recipes.category",
+  "pk": 1,
+  "fields": {
+    "name": "Verduras"
+  }
+},
+{
+  "model": "recipes.category",
+  "pk": 2,
+  "fields": {
+    "name": "Lacteos"
+  }
+},
+{
+  "model": "recipes.category",
+  "pk": 3,
+  "fields": {
+    "name": "Grano"
+  }
+},
+{
+  "model": "recipes.category",
+  "pk": 24,
+  "fields": {
+    "name": "Carne"
+  }
+}
+]

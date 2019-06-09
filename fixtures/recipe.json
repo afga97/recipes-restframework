@@ -1,0 +1,68 @@
+[
+{
+  "model": "recipes.recipe",
+  "pk": 1,
+  "fields": {
+    "name": "Platano con cilantro",
+    "description": "Alimenta mucho",
+    "image": "recipes/platano.jpeg",
+    "ingredients": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "recipes.recipe",
+  "pk": 2,
+  "fields": {
+    "name": "Bandeja Paisa",
+    "description": "Comida t\u00edpica del departamento de Antioquia, no falta en Medell\u00edn",
+    "image": "recipes/bandejap.jpg",
+    "ingredients": [
+      1,
+      4,
+      5,
+      7
+    ]
+  }
+},
+{
+  "model": "recipes.recipe",
+  "pk": 3,
+  "fields": {
+    "name": "Empanadas",
+    "description": "Las mejores empanadas",
+    "image": "recipes/empanadas.jpg",
+    "ingredients": [
+      6,
+      8
+    ]
+  }
+},
+{
+  "model": "recipes.recipe",
+  "pk": 4,
+  "fields": {
+    "name": "Frijoles",
+    "description": "No falta en Medell\u00edn ni en Emtelco",
+    "image": "recipes/frijoles.jpg",
+    "ingredients": [
+      7
+    ]
+  }
+},
+{
+  "model": "recipes.recipe",
+  "pk": 5,
+  "fields": {
+    "name": "Pescado",
+    "description": "Pescado con papitas",
+    "image": "recipes/pescado.jpg",
+    "ingredients": [
+      3,
+      8
+    ]
+  }
+}
+]

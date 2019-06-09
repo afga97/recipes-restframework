@@ -1,0 +1,47 @@
+[
+{
+  "model": "recipes.chef",
+  "pk": 7601,
+  "fields": {
+    "name": "Andres",
+    "surname": "Giraldo",
+    "edad": "23"
+  }
+},
+{
+  "model": "recipes.chef",
+  "pk": 7602,
+  "fields": {
+    "name": "Andres",
+    "surname": "Agudelo",
+    "edad": "14"
+  }
+},
+{
+  "model": "recipes.chef",
+  "pk": 7603,
+  "fields": {
+    "name": "Agudelo",
+    "surname": "Felipe",
+    "edad": "33"
+  }
+},
+{
+  "model": "recipes.chef",
+  "pk": 7604,
+  "fields": {
+    "name": "Andres",
+    "surname": "Giraldo",
+    "edad": "8"
+  }
+},
+{
+  "model": "recipes.chef",
+  "pk": 7605,
+  "fields": {
+    "name": "Andres",
+    "surname": "Giraldo",
+    "edad": "8"
+  }
+}
+]
