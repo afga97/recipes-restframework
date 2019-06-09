@@ -82,3 +82,12 @@ $ python manage.py dumpdata --indent 2 intranet.brand > ../fixtures/intranet_bra
 
 **Nota:**
 * Hacer dump por modelo para tener de forma controlada las cargas que se quieren realizar.
+
+```bash
+
+$ python manage.py loaddata ./fixtures/category.json 
+```
+* Se utilizá para hacer load data de la información contenida en los fixtures.
+
+**Nota:**
+* Procure crear los fixtures en orden de creación de tablas para tener un mejor control al hacer load data y no se presenten errores en la base de datos
