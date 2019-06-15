@@ -1,11 +1,11 @@
 from rest_framework import viewsets
 from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework import filters
 from rest_framework.response import Response
 from rest_framework import status
 from recipes import models
 from recipes import serializers
 
-# Create your views here.
 
 class BaseViewSet(viewsets.ModelViewSet):    
 
@@ -54,7 +54,8 @@ class ChefViewSet(BaseViewSet):
     """
     queryset = models.Chef.objects.all()
     serializer_class = serializers.ChefSerializer
-    filter_backends = (DjangoFilterBackend,)
+    filter_backends = (DjangoFilterBackend,filters.OrderingFilter, )
+    ordering_fields = '__all__'
     
 class IngredientViewSet(BaseViewSet):
     """
@@ -62,17 +63,22 @@ class IngredientViewSet(BaseViewSet):
     """
     queryset = models.Ingredient.objects.all()
     serializer_class = serializers.IngredientSerializer
-    filter_backends = (DjangoFilterBackend,)
+    filter_backends = (DjangoFilterBackend,filters.OrderingFilter, filters.SearchFilter,)
+    ordering_fields = '__all__'
+    search_fields = ('name', )
 
 
 class CategorieViewSet(BaseViewSet):
 
     queryset = models.Category.objects.all()
     serializer_class = serializers.CategorieSerializer
-    filter_backends = (DjangoFilterBackend,)
+    filter_backends = (DjangoFilterBackend,filters.OrderingFilter,)
+    ordering_fields = '__all__'
 
 class RecipeViewSet(BaseViewSet):
 
     queryset = models.Recipe.objects.prefetch_related('ingredients').all()
     serializer_class = serializers.RecipeSerializer
-    filter_backends = (DjangoFilterBackend, )
+    filter_backends = (DjangoFilterBackend, filters.OrderingFilter, filters.SearchFilter, )
+    ordering_fields = ('id', 'name')
+    search_fields = ('name', )
